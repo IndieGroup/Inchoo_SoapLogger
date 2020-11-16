@@ -37,9 +37,9 @@ extends Mage_Api_Model_Server_V2_Handler
      /**
      * Logs V2 API call
      *
-     * @param type $sessionId
-     * @param type $apiPath
-     * @param type $args
+     * @param string $sessionId
+     * @param string $apiPath
+     * @param array $args
      * @return mixed Null or whatever API call method returns
      */
     public function call($sessionId, $apiPath, $args = array())

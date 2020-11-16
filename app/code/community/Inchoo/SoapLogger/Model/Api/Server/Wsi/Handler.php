@@ -40,9 +40,9 @@ extends Mage_Api_Model_Server_WSI_Handler
      /**
      * Logs Wsi API call
      *
-     * @param type $sessionId
-     * @param type $apiPath
-     * @param type $args
+     * @param string $sessionId
+     * @param string $apiPath
+     * @param array $args
      * @return mixed Null or whatever API call method returns
      */
     public function call($sessionId, $apiPath, $args = array())
