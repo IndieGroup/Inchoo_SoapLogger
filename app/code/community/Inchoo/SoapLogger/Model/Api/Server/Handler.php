@@ -53,9 +53,9 @@ extends Mage_Api_Model_Server_Handler
     /**
      * Logs V1 API fault
      *
-     * @param type $faultName
-     * @param type $resourceName
-     * @param type $customMessage
+     * @param string $faultName
+     * @param string $resourceName
+     * @param string $customMessage
      */
     protected function _fault($faultName, $resourceName = null, $customMessage = null) {
         Mage::helper('inchoo_soaplogger/v1')
