@@ -49,8 +49,10 @@ class Inchoo_SoapLogger_Model_Api_Server_Handler
 
         if ($apiPath == 'sales_order.list') {
             if (isset($args[0]['main_table.updated_at']['from'])) {
+                Mage::log(print_r($args, true), ZEND_LOG::WARN, 'sendcloud_debug.log');
+
                 // There's an order before this time that causes the SendCloud app to flip the hell out!
-                $thresholdDateString = '2020-11-18 12:00:00';
+                $thresholdDateString = '2020-11-19 18:00:00';
                 $incomingDateString = $args[0]['main_table.updated_at']['from'];
 
                 $format = "Y-m-d H:i:s";
